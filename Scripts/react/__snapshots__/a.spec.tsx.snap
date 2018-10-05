@@ -1,3 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`works 1`] = `Object {}`;
+exports[`works 1`] = `
+<Test>
+  <p>
+    Test
+  </p>
+</Test>
+------------HTML PREVIEW---------------
+<Test>
+  <p>
+    Test
+  </p>
+</Test>
+`;

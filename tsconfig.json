@@ -1,10 +1,31 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "removeComments":  true,
+    "module": "es2015",
     "target": "es5",
-    "sourceMap": true
+    "jsx": "react",
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "lib": [ "es5", "dom", "es2015" ],
+    "allowJs": true,
+    "checkJs": false,
+    "types": [],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
+  "include": [
+    "./Scripts/react/**/*"
+  ],
   "exclude": [
-    "node_modules"
+    "./Scripts/react/tests/**/*",
+    "node_modules/**/node",
+    "node_modules/**/node-fetch",
+    "node_modules/**/jest"
   ]
 }
